@@ -103,4 +103,5 @@ document.getElementById('slot-show').addEventListener('click', function() {
 document.getElementById('slot-close').addEventListener('click', function() {
     const slotMachine = document.getElementById('slot-machine');
     slotMachine.style.display = 'none';
+    tokens = 0;
 });

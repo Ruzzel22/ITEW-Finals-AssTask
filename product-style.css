@@ -1,0 +1,95 @@
+/* Product (Anime) */
+#products {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 5px;
+    margin: 10px;
+}
+.product {
+    background-color: rgb(182, 180, 180);
+    padding: 10px;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.product img {
+    width: 100%;
+    height: 400px;
+    border: 2px solid black;
+}
+.product-price {
+    color:darkmagenta;
+    font-size: x-large;
+    margin-top: 10px;
+    margin-bottom: -10px;
+}
+.product h1 {
+    width: 280px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-align: center;
+}
+.product-buy {
+    width: 200px;
+    font-weight: bold;
+    color: white;
+    background: blue;
+    border: none;
+    border-radius: 25px;
+    padding: 10px;
+    cursor: pointer;
+    transition: .2s ease;
+}
+.product-buy:hover {
+    background: darkorchid;
+    transform: scale(1.1);
+}
+.product.hidden {
+    display: none;
+}
+
+/* View More Button */
+.product-view {
+    grid-column: 2 / span 2;
+    background-color: blue;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    font-size: 16px;
+    margin-top: 20px;
+    padding: 10px;
+    cursor: pointer;
+    transition: .2s ease;
+}
+.product-view:hover {
+    background-color: darkorchid;
+    transform: scale(1.1);
+}
+#view-less {
+    display: none;
+}
+
+/* Media Queries */
+@media screen and (max-width: 800px) {
+    #products {
+        grid-template-columns: repeat(2, 1fr); /* Change to 2 columns for smaller screens */
+        grid-gap: 10px; /* Increase gap slightly for better spacing */
+    }
+    .product img {
+        height: 300px; /* Reduce image height to fit smaller screens */
+    }
+    .product-buy {
+        width: 150px; /* Adjust button width */
+        font-size: 14px; /* Reduce font size for better fit */
+    }
+    .product-price {
+        font-size: large; /* Adjust price font size */
+    }
+    .product-view {
+        font-size: 14px; /* Adjust view button font size */
+        padding: 8px; /* Reduce padding */
+    }
+}

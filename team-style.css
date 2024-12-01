@@ -1,0 +1,27 @@
+/* Team (Group Members) */
+.team-container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px;
+    padding: 10px;
+}
+.team {
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(209, 208, 208);
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 10px;
+}
+.team img {
+    max-width: 100%;
+    height: 200px;
+    border: 2px solid black;
+    border-radius: 50%;
+}
+.team h1 {
+    text-align: center;
+    font-weight: bold;
+}
+

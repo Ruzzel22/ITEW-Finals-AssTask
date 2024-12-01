@@ -15,29 +15,31 @@
 /* Header */
 #header {
     grid-area: header;
-    border-bottom: 2px solid black;
+    border-bottom: 5px solid black;
 }
 
 /* Section 1: Product (Anime) */
 #products {
     grid-area: products;
-    border-bottom: 2px solid black;
+    border-bottom: 5px solid black;
+    background-color: rgb(64, 104, 236);
 }
 
 /* Section 2: Table Static Data */
 #table {
     grid-area: table-data;
-    border-bottom: 2px solid black;
+    border-bottom: 5px solid black;
 }
 
 /* Section 3: Team (Group Members) */
-#team {
+#teams {
     grid-area: team;
-    border-bottom: 2px solid black;
+    border-bottom: 5px solid black;
+    background-color: rgb(163, 120, 204);
 }
 
 /* Footer */
 #footer {
     grid-area: footer;
-    border-bottom: 2px solid black;
+    border-bottom: 5px solid black;
 }

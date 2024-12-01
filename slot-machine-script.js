@@ -19,9 +19,22 @@ function spin() {
     const pos3 = Math.floor(Math.random() * icons.length);
 
     // Transition Icons
-    column1.style.top = `-${pos1 * 200}px`;
-    column2.style.top = `-${pos2 * 200}px`;
-    column3.style.top = `-${pos3 * 200}px`;
+    const mediaQuery = window.matchMedia("(max-width: 800px)");
+    function MediaChange(event) {
+        if (event.matches) {
+            // Mobile Viewport
+            column1.style.top = `-${pos1 * 150}px`;
+            column2.style.top = `-${pos2 * 150}px`;
+            column3.style.top = `-${pos3 * 150}px`;
+        } else {
+            // Desktop Viewport
+            column1.style.top = `-${pos1 * 200}px`;
+            column2.style.top = `-${pos2 * 200}px`;
+            column3.style.top = `-${pos3 * 200}px`;
+        }
+    }    
+    mediaQuery.addListener(MediaChange);
+    MediaChange(mediaQuery);
 
     // Result
     setTimeout(() => {

@@ -1,3 +1,32 @@
+/* Spin Tokens Function */
+let tokens = 0;
+
+// Add Tokens
+const addTokens = document.getElementById('slot-show');
+addTokens.addEventListener("click", () => {
+    tokens += 5;
+    tokenCounter();
+});
+
+// Token Counter Function
+const tokenCount = document.getElementById('tokens-count');
+const slotMachine = document.getElementById('slot-machine');
+const spinButton = document.querySelector('.slot-button');
+function tokenCounter() {
+    // Update Token
+    tokenCount.textContent = tokens;
+
+    // Show/Hide Slot Machine
+    if (tokens <= 0) {
+        spinButton.disabled = true;
+        setTimeout(() => {
+            slotMachine.style.display = 'none';
+        }, 1000);
+    } else {
+        slotMachine.style.display = 'flex';
+    }
+}
+
 /* Slot Machine (Function)*/
 function spin() {
     // Disable button
@@ -54,6 +83,11 @@ function spin() {
             spinButton.disabled = false;
         }
 
+        // Decrease Tokens
+        if (tokens > 0) {
+            tokens--;
+            tokenCounter();
+        }
     }, 1000);
 }
 
@@ -62,6 +96,7 @@ function spin() {
 document.getElementById('slot-show').addEventListener('click', function() {
     const slotMachine = document.getElementById('slot-machine');
     slotMachine.style.display = 'flex';
+    spinButton.disabled = false;
 });
 
 // Hide

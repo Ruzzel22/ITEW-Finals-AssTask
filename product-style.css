@@ -89,4 +89,9 @@
     .product-view {
         width: 40%;
     }
+    .slot-button {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
 }

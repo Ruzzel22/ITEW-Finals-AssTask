@@ -1,0 +1,43 @@
+* {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#page {
+    display: grid;
+    grid-template-areas: 
+        "header"
+        "products"
+        "table-data"
+        "team"
+        "footer";
+}
+
+/* Header */
+#header {
+    grid-area: header;
+    border-bottom: 2px solid black;
+}
+
+/* Section 1: Product (Anime) */
+#products {
+    grid-area: products;
+    border-bottom: 2px solid black;
+}
+
+/* Section 2: Table Static Data */
+#table {
+    grid-area: table-data;
+    border-bottom: 2px solid black;
+}
+
+/* Section 3: Team (Group Members) */
+#team {
+    grid-area: team;
+    border-bottom: 2px solid black;
+}
+
+/* Footer */
+#footer {
+    grid-area: footer;
+    border-bottom: 2px solid black;
+}

@@ -1,8 +1,5 @@
-* {
-    font-family: 'Times New Roman', Times, serif;
-}
 /* Product (Anime) */
-#products {
+.product-container {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-gap: 5px;
@@ -56,14 +53,18 @@
 }
 
 /* View More Button */
+#view-button {
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+}
 .product-view {
-    grid-column: 2 / span 2;
     background-color: blue;
     color: white;
+    width: 20%;
     border: none;
     border-radius: 25px;
-    font-size: 16px;
-    margin-top: 20px;
+    font-size: 15px;
     padding: 10px;
     cursor: pointer;
     transition: .2s ease;
@@ -78,7 +79,7 @@
 
 /* Media Queries */
 @media screen and (max-width: 800px) {
-    #products {
+    .product-container {
         grid-template-columns: repeat(2, 1fr);
         grid-gap: 10px;  
     }
@@ -86,7 +87,6 @@
         height: 300px;
     }
     .product-view {
-        font-size: 15px;
-        padding: 10px;
+        width: 40%;
     }
 }

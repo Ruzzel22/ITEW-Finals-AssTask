@@ -22,7 +22,6 @@
 #products {
     grid-area: products;
     border-bottom: 5px solid black;
-    background-color: rgb(64, 104, 236);
 }
 
 /* Section 2: Table Static Data */

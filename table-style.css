@@ -51,4 +51,7 @@ tbody td {
     .table-label td:nth-child(6) {
         padding: 33.5px;
     }
+    .table-row-label td:nth-child(6) {
+        display: inline;
+    }
 }

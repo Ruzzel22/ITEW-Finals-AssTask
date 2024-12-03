@@ -38,7 +38,7 @@
 }
 
 /* Section 2: Table Static Data */
-#table {
+#table-data {
     grid-area: table-data;
     border-bottom: 5px solid black;
 }

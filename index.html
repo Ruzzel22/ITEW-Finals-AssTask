@@ -10,6 +10,9 @@
     <!-- UI CSS -->
     <link rel="stylesheet" href="style.css">
 
+    <!-- Header -->
+    <link rel="stylesheet" href="header-style.css">
+    
     <!-- Product (Anime) -->
     <link rel="stylesheet" href="product-style.css">
     <script src="product-script.js" defer></script>
@@ -25,11 +28,68 @@
     <!-- UI -->
     <div id="page">
         <!-- Header -->
+        <header id="header">
+            <!-- Logo Section -->
+            <div class="logo">
+                <a href="#">
+                    <img src="img/Logo.png" alt="Logo">
+                </a>
+            </div>
+    
+            <!-- Search Bar -->
+            <div class="search-bar">
+                <select id="category-select">
+                    <option value="action">Action</option>
+                    <option value="comedy">Comedy</option>
+                    <option value="fantasy">Fantasy</option>
+                </select>
+                <input type="text" placeholder="What are you looking for?">
+                <button type="submit" class="search-button">🔍</button>
+            </div>
+    
+            <!-- User Actions -->
+            <div class="user-actions">
+                <div class="dropdown">
+                    <button class="dropdown-toggle">
+                        <span class="bottom-text">Account & Lists</span>
+                    </button>
+                    <ul class="dropdown-content">
+                        <li><a href="#">Sign In</a></li>
+                        <li><a href="#">Create Account</a></li>
+                        <li><a href="#">Your Orders</a></li>
+                        <li><a href="#">Recommendations</a></li>
+                    </ul>
+                </div>
+            </div>
+    
+            <!-- Account & Orders -->
+            <span class="account-orders">Returns & Orders</span>
+    
+            <!-- Cart Section -->
+            <div class="cart-icon">
+                <img src="https://static.vecteezy.com/system/resources/previews/026/571/047/non_2x/shopping-cart-icon-free-png.png" alt="Cart">
+                <span class="item-count">0</span>
+                <span class="cart-text">Cart</span>
+            </div>
+        </header>
+    
+        <!-- Navigation Menu -->
+        <nav id="navigator">
+            <ul>
+                <li><a href="#">Today's Deals</a></li>
+                <li><a href="#">Customer Service</a></li>
+                <li><a href="#">Registry</a></li>
+                <li><a href="#">Gift Cards</a></li>
+                <li><a href="#">Sell</a></li>
+            </ul>
+        </nav>
 
         <!-- Section -->
         <main>
             <!-- Section 1: Product (Anime) -->
             <section id="products">
+                <h1 class="s-title">Anime</h1>
+
                 <div class="product-container">
                     <div class="product">
                         <img src="img/Arknights.jpg" alt="Poster">
@@ -197,41 +257,52 @@
 
             <!-- Section 3: Team (Group Members) -->
             <section id="teams">
+                <h1 class="s-title">Teams</h1>
+
                 <div class="team-container">
                     <div class="team">
                         <img src="img/Molinyawe.jpg" alt="Team">
 
-                        <h1>Molinyawe, Russel A.</h1>
-                        <h2>2IT-B</h2>
-                        <h3>Bachelor of Science in Information Technology (BSIT)</h3>
+                        <h1>Molinyawe, Russel</h1>
+                        <p>
+                            “A dedicated college student from the 2IT-B program at Pamantasan ng Cabuyao, passionate about technology and innovation. Enthusiastically exploring the fields of information technology while honing skills in problem-solving, coding, and teamwork. Committed to academic excellence and personal growth to contribute meaningfully to the tech industry in the future.”
+                        </p>
                     </div>
+
                     <div class="team">
                         <img src="img/De Leon.jpeg" alt="Team">
 
                         <h1>De Leon, Mikylla</h1>
-                        <h2>2IT-B</h2>
-                        <h3>Bachelor of Science in Information Technology (BSIT)</h3>
+                        <p>
+                            “A dedicated college student from the 2IT-B program at Pamantasan ng Cabuyao, passionate about technology and innovation. Enthusiastically exploring the fields of information technology while honing skills in problem-solving, coding, and teamwork. Committed to academic excellence and personal growth to contribute meaningfully to the tech industry in the future.”
+                        </p>
                     </div>
-                    <div class="team">
-                        <img src="#" alt="Team">
 
-                        <h1>#</h1>
-                        <h2>2IT-B</h2>
-                        <h3>Bachelor of Science in Information Technology (BSIT)</h3>
+                    <div class="team">
+                        <img src="img/Perio.jpeg" alt="Team">
+
+                        <h1>Perio, Kharrylle Claire</h1>
+                        <p>
+                            “A dedicated college student from the 2IT-B program at Pamantasan ng Cabuyao, passionate about technology and innovation. Enthusiastically exploring the fields of information technology while honing skills in problem-solving, coding, and teamwork. Committed to academic excellence and personal growth to contribute meaningfully to the tech industry in the future.”
+                        </p>
                     </div>
-                    <div class="team">
-                        <img src="#" alt="Team">
 
-                        <h1>#</h1>
-                        <h2>2IT-B</h2>
-                        <h3>Bachelor of Science in Information Technology (BSIT)</h3>
+                    <div class="team">
+                        <img src="img/Cavinta.jpeg" alt="Team">
+
+                        <h1>Cavinta, Anthony Symon</h1>
+                        <p>
+                            “A dedicated college student from the 2IT-B program at Pamantasan ng Cabuyao, passionate about technology and innovation. Enthusiastically exploring the fields of information technology while honing skills in problem-solving, coding, and teamwork. Committed to academic excellence and personal growth to contribute meaningfully to the tech industry in the future.”
+                        </p>
                     </div>
-                    <div class="team">
-                        <img src="#" alt="Team">
 
-                        <h1>#</h1>
-                        <h2>2IT-B</h2>
-                        <h3>Bachelor of Science in Information Technology (BSIT)</h3>
+                    <div class="team">
+                        <img src="img/Alvarez.jpeg" alt="Team">
+
+                        <h1>Alvarez, Kian Clark</h1>
+                        <p>
+                            “A dedicated college student from the 2IT-B program at Pamantasan ng Cabuyao, passionate about technology and innovation. Enthusiastically exploring the fields of information technology while honing skills in problem-solving, coding, and teamwork. Committed to academic excellence and personal growth to contribute meaningfully to the tech industry in the future.”
+                        </p>
                     </div>
 
                 </div>
@@ -319,9 +390,11 @@
 
         <!-- To-Do List -->
 
+        <!-- Quiz -->
+         
         <!-- Footer -->
+
     </div>
-    
 
 </body>
 </html>

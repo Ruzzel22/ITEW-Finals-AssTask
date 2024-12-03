@@ -24,4 +24,7 @@
     text-align: center;
     font-weight: bold;
 }
-
+.team p {
+    margin-top: 20px;
+    text-align: justify;
+}

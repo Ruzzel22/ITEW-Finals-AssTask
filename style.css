@@ -12,16 +12,29 @@
         "footer";
 }
 
+.s-title {
+    font-size: 2cm;
+    font-weight: bolder;
+    font-style: italic;
+    padding: 20px;
+}
+
 /* Header */
 #header {
     grid-area: header;
+    border-bottom: 2px solid black;
+}
+#navigator {
     border-bottom: 5px solid black;
+    position: sticky;
+    top: 0;
 }
 
 /* Section 1: Product (Anime) */
 #products {
     grid-area: products;
     border-bottom: 5px solid black;
+    background-color: rgba(82, 161, 236, 0.26);
 }
 
 /* Section 2: Table Static Data */

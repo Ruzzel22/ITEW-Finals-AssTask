@@ -49,9 +49,10 @@ tbody td {
         font-size: large;
     }
     .table-label td:nth-child(6) {
-        padding: 33.5px;
+        padding: 20px;
     }
     .table-row-label td:nth-child(6) {
-        display: inline;
+        font-size: medium;
+        background-color: aqua;
     }
 }

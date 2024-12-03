@@ -52,7 +52,7 @@ tbody td {
         padding: 20px;
     }
     .table-row-label td:nth-child(6) {
-        font-size: medium;
-        background-color: aqua;
+        font-size: small;
+        background-color: brown;
     }
 }

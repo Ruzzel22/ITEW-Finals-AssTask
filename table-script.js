@@ -10,7 +10,7 @@ td[1].textContent = "25GB";
 td[2].textContent = "16:9";
 td[3].textContent = "1920 (Width) x 1080 (Height)";
 td[4].textContent = "AAC, 130 Kbps, 48000 Hz";
-td[5].textContent = "Episode: 25 Minutes (Maximum)";
-td[5].innerHTML += "<br> Series: 55 Hours (Minimum)";
+td[5].textContent = "25 Minutes (Maximum)";
+td[6].innerHTML += "55 Hours (Minimum)";
 
 tbody.appendChild(insertRow);

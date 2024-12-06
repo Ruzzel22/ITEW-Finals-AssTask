@@ -1,8 +1,10 @@
 /* Table Static Data */
 .table-container {
+    position: relative;
     margin-top: -5cm;
     margin-bottom: -4cm;
     padding: 5cm;
+    z-index: -1;    
 }
 
 #table-product {

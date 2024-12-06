@@ -100,11 +100,9 @@
         <!-- Navigation Menu -->
         <nav id="navigator">
             <ul>
-                <li><a href="#">Today's Deals</a></li>
-                <li><a href="#">Customer Service</a></li>
-                <li><a href="#">Registry</a></li>
-                <li><a href="#">Gift Cards</a></li>
-                <li><a href="#">Sell</a></li>
+                <li><a href="#products">Anime</a></li>
+                <li><a href="#table-data">Specification</a></li>
+                <li><a href="#teams">Teams</a></li>
             </ul>
         </nav>
 
@@ -287,12 +285,10 @@
             </section>
 
             <!-- Section 2: Table Static Data -->
-            <section id="table-data">
-                <div class="background-table-container">
-                    <video autoplay muted loop class="background-video" >
-                      <source src="vid/Table Background.mp4" type="video/mp4">
-                    </video>
-                </div>
+            <section id="table-data" class="background-container">
+                <video autoplay muted loop playsinline class="background-video">
+                    <source src="vid/Table Background.mp4" type="video/mp4">
+                </video>
 
                 <h1 class="s-title">Specification</h1>
 
@@ -330,12 +326,10 @@
             </section>
 
             <!-- Section 3: Team (Group Members) -->
-            <section id="teams">
-                <div class="background-team-container">
-                    <video autoplay muted loop class="background-video">
-                      <source src="vid/Team Background.mp4" type="video/mp4">
-                    </video>
-                </div>
+            <section id="teams" class="background-container">
+                <video autoplay muted loop playsinline class="background-video">
+                    <source src="vid/Team Background.mp4" type="video/mp4">
+                </video>
 
                 <div class="content">
                     <h1 class="s-title">Teams</h1>
@@ -406,10 +400,21 @@
             </audio>
         </main>
 
-        <!-- Slot Machine (Icon) -->
-        <div class="slot-app">
-            <img id="slot-show" src="img/Slot Machine.gif" alt="Slot Machine">
+        <!-- Mini-App (Icon) -->
+        <div class="mini-app-container">
+            <div class="mini-app">
+                <img id="slot-show" src="img/Slot Machine.gif" alt="Slot Machine">
+            </div>
+
+            <div class="mini-app">
+                <img id="list-show" src="img/To-Do List.gif" alt="To-Do List">
+            </div>
+
+            <div class="mini-app">
+                <img id="quiz-show" src="img/Quiz.gif" alt="Quiz">
+            </div>
         </div>
+        
         <!-- Slot Machine (Interface) -->
         <div id="slot-machine">
             <div class="slot-machine">
@@ -485,10 +490,6 @@
             </div>
         </div>
 
-        <!-- To-Do List (Icon) -->
-        <div class="list-app">
-            <img id="list-show" src="img/To-Do List.gif" alt="To-Do List">
-        </div>
         <!-- To-Do List (Interface) -->
         <div id="to-do-list">
             <h1>To-Do List</h1>
@@ -508,13 +509,7 @@
                 <button id="list-close" class="list-close">Close</button>
             </div>
         </div>
-
-
-        
-        <!-- Quiz (Application) -->
-        <div class="quiz-app">
-            <img id="quiz-show" src="img/Quiz.gif" alt="Quiz">
-        </div>
+       
         <!-- Quiz (Interface) -->
 
         <!-- Footer -->

@@ -1,5 +1,6 @@
 * {
     font-family: 'Times New Roman', Times, serif;
+    scroll-behavior: smooth;
 }
 
 #page {
@@ -60,36 +61,66 @@
     border-bottom: 5px solid black;
 }
 
-/* Anime Backgound Design*/ 
+/* Anime Backgound Design*/
+.background-container {
+    position: relative;
+    width: 100%;
+}
 .background-video {
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    min-width: 100%;
-    min-height: 100%;
-    z-index: -99;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+    z-index: -1;
     opacity: 0.8;
 }
 .content {
     position: relative;
+    z-index: -1;
 }
-.background-table-container {
-    position: absolute;
-    width: 100%;
-    height: 130%;
-    overflow: hidden;
+
+/* Mini App (Icon) */
+.mini-app-container {
+    position: fixed;
+    display: flex;
+    flex-direction: column-reverse;
+    bottom: 0;
+    right: 0;
+    z-index: 1000;
 }
-.background-team-container {
-    position: absolute;
-    width: 100%;
-    height: 136%;
-    overflow: hidden;
+.mini-app {
+    margin: 5px;
+}
+.mini-app img {
+    width: 100px;
+    height: auto;
+    cursor: pointer;
+    border: 2px dashed darkorchid;
+    border-radius: 10px;
+    background-color: white;
+    transition: .2s ease;
+}
+.mini-app img:hover {
+    transform: scale(1.1);
 }
 
 /* Media Queries */
 @media screen and (max-width: 800px) {
     .background-team-container {
         height: 277%;
+    }
+    /* Mini App */
+    .slot-machine {
+        width: 90%;
+        padding: 5px;
+    }
+    .slot-title {
+        font-size: 1.5cm;
+    }
+    .slot-column {
+        width: 150px;
+        height: 150px;
     }
 }

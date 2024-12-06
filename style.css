@@ -108,19 +108,5 @@
 
 /* Media Queries */
 @media screen and (max-width: 800px) {
-    .background-team-container {
-        height: 277%;
-    }
-    /* Mini App */
-    .slot-machine {
-        width: 90%;
-        padding: 5px;
-    }
-    .slot-title {
-        font-size: 1.5cm;
-    }
-    .slot-column {
-        width: 150px;
-        height: 150px;
-    }
+    
 }

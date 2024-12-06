@@ -5,7 +5,6 @@
     align-content: center;
 }
 .slot-machine {
-    width: 70%;
     background-color: rgba(128, 128, 128, 0.63);
     display: grid;
     grid-template-rows: 1fr;
@@ -134,8 +133,11 @@
 
 /* Media Queries */
 @media screen and (max-width: 800px) {
+    .slot-machine {
+        
+    }
     .icon {
-        height: 150px;
+        height: 160px;
     }
     .icon img {
         height: 70%;

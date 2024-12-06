@@ -52,9 +52,9 @@ function spin() {
     function MediaChange(event) {
         if (event.matches) {
             // Mobile Viewport
-            column1.style.top = `-${pos1 * 150}px`;
-            column2.style.top = `-${pos2 * 150}px`;
-            column3.style.top = `-${pos3 * 150}px`;
+            column1.style.top = `-${pos1 * 160}px`;
+            column2.style.top = `-${pos2 * 160}px`;
+            column3.style.top = `-${pos3 * 160}px`;
         } else {
             // Desktop Viewport
             column1.style.top = `-${pos1 * 200}px`;

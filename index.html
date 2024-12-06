@@ -5,7 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, initial-scale=0.5, maximum-scale=1.0, minimum-scale=0.5">
     <title>Final Assessment Task</title>
     <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
 
     <!-- UI CSS -->
     <link rel="stylesheet" href="style.css">
@@ -27,6 +29,13 @@
     <!--Slot Machine-->
     <link rel="stylesheet" href="slot-machine-style.css">
     <script src="slot-machine-script.js" defer></script>
+
+    <!-- To-Do List -->
+    <link rel="stylesheet" href="to-do-list-style.css">
+    <script src="to-do-list-script.js" defer></script>
+
+    <!-- Quiz -->
+    <link rel="stylesheet" href="quiz-style.css">
 </head>
 <body>
     <!-- UI -->
@@ -68,12 +77,23 @@
     
             <!-- Account & Orders -->
             <span class="account-orders">Returns & Orders</span>
-    
-            <!-- Cart Section -->
-            <div class="cart-icon">
-                <img src="https://static.vecteezy.com/system/resources/previews/026/571/047/non_2x/shopping-cart-icon-free-png.png" alt="Cart">
-                <span class="item-count">0</span>
-                <span class="cart-text">Cart</span>
+            
+            <!-- Hamburger Icon (Mobile) -->
+            <div class="hamburger-icon d-lg-none">
+                <button class="btn btn-light" id="hamburger-btn">
+                    <i class="fa fa-bars"></i>
+                </button>
+                <ul class="hamburger-content">
+                    <li><a href="#">Account & Lists</a></li>
+                    <li><a href="#">Returns & Orders</a></li>
+                </ul>
+            </div>
+
+            <!-- Cart Icon (Mobile) -->
+            <div class="cart-icon position-relative">
+                <button class="btn btn-light">
+                    <i class="fa fa-shopping-cart"></i>
+                </button>
             </div>
         </header>
     
@@ -88,6 +108,7 @@
             </ul>
         </nav>
 
+
         <!-- Section -->
         <main>
             <!-- Section 1: Product (Anime) -->
@@ -96,8 +117,8 @@
 
                 <div class="product-container">
                     <div class="product">
-                        <img src="img/Arknights.jpg" alt="Poster">
-        
+                        <img src="img/Arknights.jpg" alt="Arknights">
+
                         <div class="product-price">
                             <span>₱</span>
                             <span>1,200</span>
@@ -107,7 +128,7 @@
                         <button class="product-buy">Buy Now</button>
                     </div>
                     <div class="product">
-                        <img src="img/Attack On Titan Poster.jpg" alt="Poster">
+                        <img src="img/Attack On Titan Poster.jpg" alt="Attack On Titan">
         
                         <div class="product-price">
                             <span>₱</span>
@@ -118,7 +139,7 @@
                         <button class="product-buy">Buy Now</button>
                     </div>
                     <div class="product">
-                        <img src="img/Azur Lane.jpg" alt="Poster">
+                        <img src="img/Azur Lane.jpg" alt="Azur Lane">
         
                         <div class="product-price">
                             <span>₱</span>
@@ -129,7 +150,7 @@
                         <button class="product-buy">Buy Now</button>
                     </div>
                     <div class="product">
-                        <img src="img/Bleach Poster.jpg" alt="Poster">
+                        <img src="img/Bleach Poster.jpg" alt="Bleach">
         
                         <div class="product-price">
                             <span>₱</span>
@@ -140,7 +161,7 @@
                         <button class="product-buy">Buy Now</button>
                     </div>
                     <div class="product hidden">
-                        <img src="img/Boruto.jpg" alt="Poster">
+                        <img src="img/Boruto.jpg" alt="Boruto">
         
                         <div class="product-price">
                             <span>₱</span>
@@ -151,7 +172,7 @@
                         <button class="product-buy">Buy Now</button>
                     </div>
                     <div class="product hidden">
-                        <img src="img/Dragon Ball Poster.jpg" alt="Poster">
+                        <img src="img/Dragon Ball Poster.jpg" alt="Dragon Ball">
         
                         <div class="product-price">
                             <span>₱</span>
@@ -162,7 +183,7 @@
                         <button class="product-buy">Buy Now</button>
                     </div>
                     <div class="product hidden">
-                        <img src="img/Fairy Tail Poster.jpg" alt="Poster">
+                        <img src="img/Fairy Tail Poster.jpg" alt="Fairy Tail">
         
                         <div class="product-price">
                             <span>₱</span>
@@ -173,7 +194,7 @@
                         <button class="product-buy">Buy Now</button>
                     </div>
                     <div class="product hidden">
-                        <img src="img/Katana Maidens.jpg" alt="Poster">
+                        <img src="img/Katana Maidens.jpg" alt="Katana Maidens">
         
                         <div class="product-price">
                             <span>₱</span>
@@ -184,7 +205,7 @@
                         <button class="product-buy">Buy Now</button>
                     </div>
                     <div class="product hidden">
-                        <img src="img/One Piece Poster.jpg" alt="Poster">
+                        <img src="img/One Piece Poster.jpg" alt="One Piece">
         
                         <div class="product-price">
                             <span>₱</span>
@@ -195,7 +216,7 @@
                         <button class="product-buy">Buy Now</button>
                     </div>
                     <div class="product hidden">
-                        <img src="img/Oshi No Ko.jpg" alt="Poster">
+                        <img src="img/Oshi No Ko.jpg" alt="Oshi No Ko">
         
                         <div class="product-price">
                             <span>₱</span>
@@ -206,7 +227,7 @@
                         <button class="product-buy">Buy Now</button>
                     </div>
                     <div class="product hidden">
-                        <img src="img/Seven Deadly Sins Poster.jpg" alt="Poster">
+                        <img src="img/Seven Deadly Sins Poster.jpg" alt="Seven Deadly Sins">
         
                         <div class="product-price">
                             <span>₱</span>
@@ -217,7 +238,7 @@
                         <button class="product-buy">Buy Now</button>
                     </div>
                     <div class="product hidden">
-                        <img src="img/Shangri-La Frontier.jpg" alt="Poster">
+                        <img src="img/Shangri-La Frontier.jpg" alt="Shangri-La Frontier">
         
                         <div class="product-price">
                             <span>₱</span>
@@ -228,7 +249,7 @@
                         <button class="product-buy">Buy Now</button>
                     </div>
                     <div class="product hidden">
-                        <img src="img/The Eminence In Shadow.jpg" alt="Poster">
+                        <img src="img/The Eminence In Shadow.jpg" alt="The Eminence In Shadow">
         
                         <div class="product-price">
                             <span>₱</span>
@@ -239,7 +260,7 @@
                         <button class="product-buy">Buy Now</button>
                     </div>
                     <div class="product hidden">
-                        <img src="img/Undead Unluck.jpg" alt="Poster">
+                        <img src="img/Undead Unluck.jpg" alt="Undead Unluck">
         
                         <div class="product-price">
                             <span>₱</span>
@@ -249,16 +270,30 @@
                         <h1>Undead Unluck</h1>
                         <button class="product-buy">Buy Now</button>
                     </div>
+
+                    <!-- Preview -->
+                    <div id="product-preview">
+                        <div class="preview-container">
+                            <img id="preview-gif" src="">
+                        </div>
+                    </div>
                 </div>
                 
                 <div id="view-button">
                     <button id="view-more" class="product-view">View More</button>
                     <button id="view-less" class="product-view">View Less</button>
                 </div>
+
             </section>
 
             <!-- Section 2: Table Static Data -->
             <section id="table-data">
+                <div class="background-table-container">
+                    <video autoplay muted loop class="background-video" >
+                      <source src="vid/Table Background.mp4" type="video/mp4">
+                    </video>
+                </div>
+
                 <h1 class="s-title">Specification</h1>
 
                 <div class="table-container">
@@ -279,8 +314,8 @@
                     </table>
 
                     <!-- JS Input -->
-                    <template id="table-row">
-                        <tr class="table-row-label">
+                    <template id="table-column">
+                        <tr class="table-column-label">
                             <td class="table-record"></td>
                             <td></td>
                             <td></td>
@@ -296,59 +331,82 @@
 
             <!-- Section 3: Team (Group Members) -->
             <section id="teams">
-                <h1 class="s-title">Teams</h1>
-
-                <div class="team-container">
-                    <div class="team">
-                        <img src="img/Molinyawe.jpg" alt="Team">
-
-                        <h1>Molinyawe, Russel</h1>
-                        <p>
-                            “A dedicated college student from the 2IT-B program at Pamantasan ng Cabuyao, passionate about technology and innovation. Enthusiastically exploring the fields of information technology while honing skills in problem-solving, coding, and teamwork. Committed to academic excellence and personal growth to contribute meaningfully to the tech industry in the future.”
-                        </p>
-                    </div>
-
-                    <div class="team">
-                        <img src="img/De Leon.jpeg" alt="Team">
-
-                        <h1>De Leon, Mikylla</h1>
-                        <p>
-                            “A dedicated college student from the 2IT-B program at Pamantasan ng Cabuyao, passionate about technology and innovation. Enthusiastically exploring the fields of information technology while honing skills in problem-solving, coding, and teamwork. Committed to academic excellence and personal growth to contribute meaningfully to the tech industry in the future.”
-                        </p>
-                    </div>
-
-                    <div class="team">
-                        <img src="img/Perio.jpeg" alt="Team">
-
-                        <h1>Perio, Kharrylle Claire</h1>
-                        <p>
-                            “A dedicated college student from the 2IT-B program at Pamantasan ng Cabuyao, passionate about technology and innovation. Enthusiastically exploring the fields of information technology while honing skills in problem-solving, coding, and teamwork. Committed to academic excellence and personal growth to contribute meaningfully to the tech industry in the future.”
-                        </p>
-                    </div>
-
-                    <div class="team">
-                        <img src="img/Cavinta.jpeg" alt="Team">
-
-                        <h1>Cavinta, Anthony Symon</h1>
-                        <p>
-                            “A dedicated college student from the 2IT-B program at Pamantasan ng Cabuyao, passionate about technology and innovation. Enthusiastically exploring the fields of information technology while honing skills in problem-solving, coding, and teamwork. Committed to academic excellence and personal growth to contribute meaningfully to the tech industry in the future.”
-                        </p>
-                    </div>
-
-                    <div class="team">
-                        <img src="img/Alvarez.jpeg" alt="Team">
-
-                        <h1>Alvarez, Kian Clark</h1>
-                        <p>
-                            “A dedicated college student from the 2IT-B program at Pamantasan ng Cabuyao, passionate about technology and innovation. Enthusiastically exploring the fields of information technology while honing skills in problem-solving, coding, and teamwork. Committed to academic excellence and personal growth to contribute meaningfully to the tech industry in the future.”
-                        </p>
-                    </div>
-
+                <div class="background-team-container">
+                    <video autoplay muted loop class="background-video">
+                      <source src="vid/Team Background.mp4" type="video/mp4">
+                    </video>
                 </div>
+
+                <div class="content">
+                    <h1 class="s-title">Teams</h1>
+
+                    <div class="team-container">
+                        <div class="team">
+                            <img src="img/Molinyawe.jpg" alt="Team">
+
+                            <h1>Molinyawe, Russel</h1>
+                            <h2>Designer/Developer</h2>
+                            <p>
+                                “He takes the lead in developing the Section and Slot Machine App features of the website. He's responsible for overseeing the design, development, and integration of these key components, ensuring that they work smoothly. The Section refers to organizing content into distinct areas or segments, while the Slot Machine App involves building an interactive, engaging feature with dynamic functionality.”
+                            </p>
+                        </div>
+
+                        <div class="team">
+                            <img src="img/De Leon.jpeg" alt="Team">
+
+                            <h1>De Leon, Mikylla</h1>
+                            <h2>Designer</h2>
+                            <p>
+                                “She's responsible for designing and implementing the header of the website. The header is a critical part of the website as it often contains the primary navigation and branding elements, such as the logo, menu, and search bar. She ensures the header is visually appealing, user-friendly, and works across all devices.”
+                            </p>
+                        </div>
+
+                        <div class="team">
+                            <img src="img/Perio.jpeg" alt="Team">
+
+                            <h1>Perio, Kharrylle Claire</h1>
+                            <h2>Developer</h2>
+                            <p>
+                                “She specializes in creating the To-Do List feature of the website. They focus on building the user interface and functionality for managing tasks, such as adding and removing tasks. She's responsible for ensuring that this feature is intuitive and well integrated.”
+                            </p>
+                        </div>
+
+                        <div class="team">
+                            <img src="img/Cavinta.jpeg" alt="Team">
+
+                            <h1>Cavinta, Anthony Symon</h1>
+                            <h2>Developer</h2>
+                            <p>
+                                “He's in charge of building the Quiz App feature. They are responsible for developing the structure and logic of the quiz, including user interactions, question and answer handling. He also insures the data are stores in the local storage when the web broser is refresh.”
+                            </p>
+                        </div>
+
+                        <div class="team">
+                            <img src="img/Alvarez.jpeg" alt="Team">
+
+                            <h1>Alvarez, Kian Clark</h1>
+                            <h2>Designer</h2>
+                            <p>
+                                “He's responsible for creating and implementing the footer of the website. The footer typically contains useful information, such as contact details, social media links, privacy policy, and copyright information. He ensures that the footer is clean, functional, and provides easy access to important information for users.”
+                            </p>
+                        </div>
+
+                    </div>
+                </div>
+                
             </section>
+
+            <!-- Decoration -->
+            <div id="Paimon" title="Paimon" onclick="playPaimonVoice()">
+                <img src="img/Paimon GIF.gif">
+            </div>
+
+            <audio id="voicePaimon">
+                <source src="aud/Paimon Voice 07.ogg" type="audio/mpeg">
+            </audio>
         </main>
 
-        <!-- Slot Machine (Application) -->
+        <!-- Slot Machine (Icon) -->
         <div class="slot-app">
             <img id="slot-show" src="img/Slot Machine.gif" alt="Slot Machine">
         </div>
@@ -427,10 +485,38 @@
             </div>
         </div>
 
-        <!-- To-Do List -->
+        <!-- To-Do List (Icon) -->
+        <div class="list-app">
+            <img id="list-show" src="img/To-Do List.gif" alt="To-Do List">
+        </div>
+        <!-- To-Do List (Interface) -->
+        <div id="to-do-list">
+            <h1>To-Do List</h1>
 
-        <!-- Quiz -->
-         
+            <div class="list-container">
+              <input type="text" id="task-input" placeholder="Add a task">
+              <button id="add-task">Add</button>
+            </div>
+        
+            <ul id="task-list"></ul>
+        
+            <div class="task-count">
+              Completed: <span id="completed-count">0</span> | Uncompleted: <span id="uncompleted-count">0</span>
+            </div>
+            
+            <div>
+                <button id="list-close" class="list-close">Close</button>
+            </div>
+        </div>
+
+
+        
+        <!-- Quiz (Application) -->
+        <div class="quiz-app">
+            <img id="quiz-show" src="img/Quiz.gif" alt="Quiz">
+        </div>
+        <!-- Quiz (Interface) -->
+
         <!-- Footer -->
 
     </div>

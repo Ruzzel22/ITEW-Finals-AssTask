@@ -17,6 +17,7 @@
     font-weight: bolder;
     font-style: italic;
     padding: 20px;
+    color: white;
 }
 
 /* Header */
@@ -28,13 +29,14 @@
     border-bottom: 5px solid black;
     position: sticky;
     top: 0;
+    z-index: 2;
 }
 
 /* Section 1: Product (Anime) */
 #products {
     grid-area: products;
-    border-bottom: 5px solid black;
-    background-color: rgba(82, 161, 236, 0.26);
+    border-bottom: 5px solid;
+    background-color: black;
 }
 
 /* Section 2: Table Static Data */
@@ -42,16 +44,52 @@
     grid-area: table-data;
     border-bottom: 5px solid black;
 }
+#table-data {
+    color: white;
+}
 
 /* Section 3: Team (Group Members) */
 #teams {
     grid-area: team;
     border-bottom: 5px solid black;
-    background-color: rgb(163, 120, 204);
 }
 
 /* Footer */
 #footer {
     grid-area: footer;
     border-bottom: 5px solid black;
+}
+
+/* Anime Backgound Design*/ 
+.background-video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -99;
+    opacity: 0.8;
+}
+.content {
+    position: relative;
+}
+.background-table-container {
+    position: absolute;
+    width: 100%;
+    height: 130%;
+    overflow: hidden;
+}
+.background-team-container {
+    position: absolute;
+    width: 100%;
+    height: 136%;
+    overflow: hidden;
+}
+
+/* Media Queries */
+@media screen and (max-width: 800px) {
+    .background-team-container {
+        height: 277%;
+    }
 }

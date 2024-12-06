@@ -1,0 +1,138 @@
+/* To-Do List (Icon) */
+.list-app {
+    position: fixed;
+    bottom: 20%;
+    right: 1%;
+    z-index: 1000;
+}
+.list-app img {
+    width: 100px;
+    height: auto;
+    cursor: pointer;
+    border: 2px dashed darkorchid;
+    border-radius: 10px;
+    transition: .2s ease;
+}
+.list-app img:hover {
+    transform: scale(1.1);
+}
+
+/* To-Do List (Application) */
+.list-container {
+    width: 80%;
+    max-width: 500px;
+    margin: 20px auto;
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+.list-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+#task-input {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+}
+#add-task {
+    margin-left: 10px;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+#add-task:hover {
+    background-color: #45a049;
+}
+#task-list {
+    list-style-type: none;
+}
+.task {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+.task input[type="checkbox"] {
+    margin-right: 10px;
+}
+.task span {
+    flex: 1;
+    text-decoration: none;
+    margin-right: 20px;
+}
+.task span.completed {
+    text-decoration: line-through;
+    color: #888;
+}
+.input-container button {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.delete {
+    background-color: #f44336;
+    color: #fff;
+}
+.delete:hover {
+    background-color: #e53935;
+}
+.edit {
+    background-color: #2196F3;
+    color: #fff;
+    margin-left: 5px;
+}
+.edit:hover {
+    background-color: #1e88e5;
+}
+.task-count {
+    margin-top: 20px;
+}
+.list-close {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #f44336;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.list-close:hover {
+    padding: 10px 20px;
+    background-color: #e53935;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Slot Machine (Hide) */
+#to-do-list {
+    color: white;
+    display: none;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2000;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+@media (max-width: 768px) {
+    .list-container {
+        width: 90%;
+    }
+}

@@ -6,7 +6,8 @@
     margin: 10px;
 }
 .product {
-    background-color: rgb(182, 180, 180);
+    background-color: white;
+    border: 2px solid darkorchid;
     padding: 10px;
     display: flex;
     flex-direction: column;
@@ -17,6 +18,11 @@
     width: 100%;
     height: 400px;
     border: 2px solid black;
+    cursor: pointer;
+}
+.product img:hover {
+    transform: scale(1.03);
+
 }
 .product-price {
     color:darkmagenta;
@@ -51,6 +57,31 @@
     display: none;
 }
 
+/* Product Preview */
+/* GIF Modal Styling */
+#product-preview {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+.preview-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border:5px dashed darkorchid;
+}
+#preview-gif {
+    max-width: 100%;
+    height: 10cm;
+}
+
 /* View More Button */
 #view-button {
     display: flex;
@@ -74,6 +105,16 @@
 }
 #view-less {
     display: none;
+}
+
+/* Paimon */
+#Paimon {
+    position: fixed;
+    transform: scaleX(-1);
+    bottom: 0;
+}
+#Paimon img {
+    height: 200px;
 }
 
 /* Media Queries */

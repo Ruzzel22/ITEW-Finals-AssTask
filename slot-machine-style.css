@@ -133,9 +133,6 @@
 
 /* Media Queries */
 @media screen and (max-width: 800px) {
-    .slot-machine {
-        
-    }
     .icon {
         height: 160px;
     }

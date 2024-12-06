@@ -9,33 +9,33 @@ document.querySelectorAll('.product img').forEach(img => {
         const clickedProduct = e.target.alt;
         // Condition when clicked
         if (clickedProduct === 'Arknights') {
-            previewGif.src = 'img/@.gif';
+            previewGif.src = 'img/Arknights.gif';
         } else if (clickedProduct === 'Attack On Titan') {
-            previewGif.src = 'img/@.gif';
+            previewGif.src = 'img/Attack On Titan.gif';
         } else if (clickedProduct === 'Azur Lane') {
-            previewGif.src = 'img/@.gif';
+            previewGif.src = 'img/Azur Lane.gif';
         } else if (clickedProduct === 'Bleach') {
-            previewGif.src = 'img/@.gif';
+            previewGif.src = 'img/Bleach.gif';
         } else if (clickedProduct === 'Boruto') {
-            previewGif.src = 'img/@.gif';
+            previewGif.src = 'img/Boruto.gif';
         } else if (clickedProduct === 'Dragon Ball') {
-            previewGif.src = 'img/Goku Vs Jiren.gif';
+            previewGif.src = 'img/Dragon Ball.gif';
         } else if (clickedProduct === 'Fairy Tail') {
-            previewGif.src = 'img/@.gif';
+            previewGif.src = 'img/Fairy Tail.gif';
         } else if (clickedProduct === 'Katana Maidens') {
-            previewGif.src = 'img/@.gif';
+            previewGif.src = 'img/Katana Maidens.gif';
         } else if (clickedProduct === 'One Piece') {
-            previewGif.src = 'img/@.gif';
+            previewGif.src = 'img/One Piece.gif';
         } else if (clickedProduct === 'Oshi No Ko') {
-            previewGif.src = 'img/@.gif';
+            previewGif.src = 'img/Oshi No Ko.gif';
         } else if (clickedProduct === 'Seven Deadly Sins') {
-            previewGif.src = 'img/@.gif';
+            previewGif.src = 'img/Seven Deadly Sins.gif';
         } else if (clickedProduct === 'Shangri-La Frontier') {
-            previewGif.src = 'img/@.gif';
+            previewGif.src = 'img/Shangri-La Frontier.gif';
         } else if (clickedProduct === 'The Eminence In Shadow') {
-            previewGif.src = 'img/@.gif';
+            previewGif.src = 'img/The Eminence In Shadow.gif';
         } else if (clickedProduct === 'Undead Unluck') {
-            previewGif.src = 'img/@.gif';
+            previewGif.src = 'img/Undead Unluck.gif';
         }
 
         productPreview.style.display = 'flex';

@@ -58,7 +58,7 @@
 /* Footer */
 #footer {
     grid-area: footer;
-    border-bottom: 5px solid black;
+    z-index: 1001;
 }
 
 /* Anime Backgound Design*/

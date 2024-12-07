@@ -73,6 +73,7 @@ header {
 .user-actions {
     display: flex;
     align-items: center;
+    z-index: 3;
 }
 .user-actions .dropdown {
     position: relative;

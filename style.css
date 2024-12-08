@@ -43,10 +43,8 @@
 /* Section 2: Table Static Data */
 #table-data {
     grid-area: table-data;
-    border-bottom: 5px solid black;
-}
-#table-data {
     color: white;
+    border-bottom: 5px solid black;
 }
 
 /* Section 3: Team (Group Members) */

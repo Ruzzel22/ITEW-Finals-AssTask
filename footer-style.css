@@ -19,7 +19,7 @@ footer {
 
 .footer-section h4 {
     margin-bottom: 10px;
-    font-size: 20px;
+    font-size: 25px;
     font-weight: bold;
     color: darkorchid;
 }
@@ -116,12 +116,4 @@ footer {
 
 .footer-bottom a:hover {
     text-decoration: underline;
-}
-
-/* Media Queries */
-@media screen and (max-width: 800px) {
-    .footer-main {
-        justify-content: center;
-        text-align: center;
-    }
 }

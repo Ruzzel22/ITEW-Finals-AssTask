@@ -5,6 +5,7 @@
     gap: 10px;
     padding: 10px;
     color: white;
+    border: 1px solid black;
 }
 .team {
     max-width: 100%;

@@ -4,9 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, initial-scale=0.5, maximum-scale=1.0, minimum-scale=0.5">
     <title>Final Assessment Task</title>
-    <!-- Bootstrap CSS -->
+    <!-- CSS Framework (Bootstrap) -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Font -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
 
     <!-- UI CSS -->
@@ -36,6 +35,7 @@
 
     <!-- Quiz -->
     <link rel="stylesheet" href="quiz-style.css">
+    <script src="quiz-script.js" defer></script>
 
     <!-- Footer -->
     <link rel="stylesheet" href="footer-style.css">
@@ -513,6 +513,65 @@
         </div>
        
         <!-- Quiz (Application) -->
+        <div id="quiz-app">
+            <div class="quiz-container">
+                <div class="quiz-form">
+                    <h1>Welcome to the Quiz</h1>
+                    
+                    <form id="quiz-form">
+                        <!-- Question 1 -->
+                        <div class="question">
+                            <p>1. What Technique did Goku use to defeat Majin Buu?</p>
+                            <label><input type="radio" name="q1" value="Kamehameha"> Kamehameha</label>
+                            <label><input type="radio" name="q1" value="Spirit Bomb"> Spirit Bomb</label>
+                            <label><input type="radio" name="q1" value="Dragon Fist"> Dragon Fist</label>
+                        </div>
+                
+                        <!-- Question 2 -->
+                        <div class="question">
+                            <p>2. What is the name of Naruto's Tailed Beast?</p>
+                            <label><input type="radio" name="q2" value="Kurama"> Kurama</label>
+                            <label><input type="radio" name="q2" value="Kitsune"> Kitsune</label>
+                            <label><input type="radio" name="q2" value="Inari"> Inari</label>
+                        </div>
+                
+                        <!-- Question 3 -->
+                        <div class="question">
+                            <p>3. What is VRMMO called “God-Tier”?</p>
+                            <label><input type="radio" name="q3" value="Sword Art Online"> Sword Art Online</label>
+                            <label><input type="radio" name="q3" value="Shangri-La Frontier"> Shangri-La Frontier</label>
+                            <label><input type="radio" name="q3" value="Accel World"> Accel World</label>
+                        </div>
+                
+                        <!-- Question 4 -->
+                        <div class="question">
+                            <p>4. What is the name of Ichigo's Bankai?</p>
+                            <label><input type="radio" name="q4" value="Senbonzakura Kageyoshi"> Senbonzakura Kageyoshi</label>
+                            <label><input type="radio" name="q4" value="Daiguren Hyorinmaru"> Daiguren Hyorinmaru</label>
+                            <label><input type="radio" name="q4" value="Tensa Zangetsu"> Tensa Zangetsu</label>
+                        </div>
+                
+                        <!-- Question 5 -->
+                        <div class="question">
+                            <p>5. What type of Devil Fruit did Luffy eat?</p>
+                            <label><input type="radio" name="q5" value="Paramecia-Type"> Paramecia-Type</label>
+                            <label><input type="radio" name="q5" value="Logia-Type"> Logia-Type</label>
+                            <label><input type="radio" name="q5" value="Mythical Zoan-Type"> Mythical Zoan-Type</label>
+                        </div>
+                    
+                        <button type="button" id="submit">Submit</button>
+                    </form>
+                    
+                    <div id="score-container" style="display:none;">
+                        <h2>Your Score: <span id="score">0</span>/5</h2>
+                    </div>
+                </div>
+            </div>
+            
+            <div>
+                <button id="quiz-close" class="quiz-close">Close</button>
+            </div>
+        </div>
 
         <!-- Footer -->
         <footer id="footer">
@@ -540,7 +599,7 @@
                         <li><a href="#">See More Make Money with Us</a></li>
                     </ul>
                 </div>
-                
+
                 <div class="footer-section">
                     <h4>Payment Products</h4>
                     <ul>
@@ -562,29 +621,30 @@
                         <li><a href="#">Help</a></li>
                     </ul>
                 </div>
+            </div>
             
-                <div class="footer-selector">
-                    <a href="#" class="language">English</a>
-                    <a href="#" class="country">Philippines</a>
-                </div>
+            <div class="footer-selector">
+                <a href="#" class="language">English</a>
+                <a href="#" class="country">Philippines
+            </div>
             
-                <div class="footer-links">
-                    <ul>
-                        <li><a href="#">Music</a> <span>Stream millions of songs</span></li>
-                        <li><a href="#">Advertising</a> <span>Find, attract, and engage customers</span></li>
-                        <li><a href="#">Drive</a> <span>Cloud storage</span></li>
-                        <li><a href="#">6pm</a> <span>Score deals on fashion brands</span></li>
-                        <li><a href="#">AbeBooks</a> <span>Books, art & collectibles</span></li>
-                        <li><a href="#">ACX</a> <span>Audiobook Publishing Made Easy</span></li>
-                    </ul>
-                </div>
+            <div class="footer-links">
+                <ul>
+                    <li><a href="#">Music</a> <span>Stream millions of songs</span></li>
+                    <li><a href="#">Advertising</a> <span>Find, attract, and engage customers</span></li>
+                    <li><a href="#">Drive</a> <span>Cloud storage</span></li>
+                    <li><a href="#">6pm</a> <span>Score deals on fashion brands</span></li>
+                    <li><a href="#">AbeBooks</a> <span>Books, art & collectibles</span></li>
+                    <li><a href="#">ACX</a> <span>Audiobook Publishing Made Easy</span></li>
+                </ul>
+            </div>
             
-                <div class="footer-bottom">
-                    <p>&copy; 2024-2025 ITEW
-                    <a href="#">Conditions of Use</a> | <a href="#">Privacy Notice</a> | <a href="#">Your Ads Privacy Choices</a>
-                </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024-2025 ITEW
+                <a href="#">Conditions of Use</a> | <a href="#">Privacy Notice</a> | <a href="#">Your Ads Privacy Choices</a>
+            </div>
         </footer>
-
+    
     </div>
 
 </body>

@@ -1,9 +1,18 @@
-/* Slot Machine (Interface) */
+/* Slot Machine (Hide) */
 #slot-machine {
-    display: flex;
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2000;
     justify-content: center;
-    align-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.8);
 }
+
+/* Slot Machine (Application) */
 .slot-machine {
     background-color: rgba(128, 128, 128, 0.63);
     display: grid;
@@ -117,19 +126,7 @@
     z-index: 9999;
 }
 
-/* Slot Machine (Hide) */
-#slot-machine {
-    display: none;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 2000;
-    justify-content: center;
-    align-items: center;
-    background-color: rgba(0, 0, 0, 0.8);
-}
+
 
 /* Media Queries */
 @media screen and (max-width: 800px) {

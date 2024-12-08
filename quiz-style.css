@@ -1,1 +1,94 @@
-/* Slot Machine (Application) */
+/* Quiz (Hide) */
+#quiz-app {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2000;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Quiz (Application) */
+.quiz-container {
+    background: rgb(61, 61, 61);
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 600px;
+    height: 600px;
+    overflow: auto;
+    border: 5px solid darkorchid;
+    padding: 10px;
+}
+
+.quiz-container h1, .quiz-container h2 {
+    font-size: 24px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.question {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin: 5px 0;
+}
+
+#submit {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    color: white;
+    background-color: #007bff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#submit:hover {
+    background-color: #0056b3;
+}
+
+#score-container {
+    margin-top: 20px;
+}
+
+.quiz-close {
+    position: absolute;
+    top: 0;
+    margin-top: 20px;
+    margin-left: 10px;
+    padding: 10px 20px;
+    background-color: #f44336;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.quiz-close:hover {
+    padding: 10px 20px;
+    background-color: #e53935;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Media Queries */
+@media screen and (max-width: 800px) {
+    .quiz-container {
+        width: 500px;
+        height: 500px;
+    }
+    .quiz-close {
+        margin-top: 30px;
+    }
+}

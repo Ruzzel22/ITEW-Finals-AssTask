@@ -136,6 +136,9 @@
     .icon img {
         height: 70%;
     }
+    .button-container {
+        justify-content: space-evenly;
+    }
     .slot-button {
         width: 100px;
         height: 80px;

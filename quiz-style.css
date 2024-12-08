@@ -84,11 +84,16 @@ label {
 
 /* Media Queries */
 @media screen and (max-width: 800px) {
+    #quiz-app {
+        flex-direction: column;
+    }
     .quiz-container {
         width: 500px;
         height: 500px;
     }
     .quiz-close {
-        margin-top: 30px;
+        position: relative;
+        margin-top: 10px;
+        margin-left: 0;
     }
 }

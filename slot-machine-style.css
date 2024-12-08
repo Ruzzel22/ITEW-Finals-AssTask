@@ -76,13 +76,13 @@
 .button-container {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-around;
     align-content: center;
 }
 .slot-button {
     grid-area: spin;
     width: 130px;
-    height: 100px;
+    height: 80px;
     font-size: 1cm;
     font-weight: bolder;
     color: white;
@@ -101,7 +101,7 @@
 }
 .close-button {
     width: 130px;
-    height: 100px;
+    height: 80px;
     font-size: 1cm;
     font-weight: bolder;
     color: white;
@@ -130,6 +130,9 @@
 
 /* Media Queries */
 @media screen and (max-width: 800px) {
+    .slot-machine {
+        display: block;
+    }
     .icon {
         height: 160px;
     }
@@ -137,7 +140,10 @@
         height: 70%;
     }
     .button-container {
-        justify-content: space-evenly;
+        flex-direction: row;
+    }
+    .button-container button {
+        margin: 10px;
     }
     .slot-button {
         width: 100px;

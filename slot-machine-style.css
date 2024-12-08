@@ -127,9 +127,6 @@
     transition: 1.9s ease-in-out;
     z-index: 9999;
 }
-#tokens-count {
-    margin-left: 5px;
-}
 
 /* Media Queries */
 @media screen and (max-width: 800px) {
@@ -149,8 +146,7 @@
         margin: 10px;
     }
     .slot-button {
-        width: 100px;
-        height: 80px;
+        width: 110px;
         font-size: 0.8cm;
     }
     .close-button {

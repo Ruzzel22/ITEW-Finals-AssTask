@@ -28,6 +28,7 @@
 }
 .slot-title {
     grid-area: title;
+    text-align: center;
     font-style: italic;
     font-size: 2cm;
     color: white;
@@ -81,6 +82,7 @@
 }
 .slot-button {
     grid-area: spin;
+    padding: 5px;
     width: 130px;
     height: 80px;
     font-size: 1cm;
@@ -125,8 +127,9 @@
     transition: 1.9s ease-in-out;
     z-index: 9999;
 }
-
-
+#tokens-count {
+    margin-left: 5px;
+}
 
 /* Media Queries */
 @media screen and (max-width: 800px) {

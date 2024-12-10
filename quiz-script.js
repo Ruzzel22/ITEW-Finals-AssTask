@@ -13,6 +13,29 @@ const correctAnswers = {
     q5: 'Mythical Zoan-Type'
 };
 
+// Function to load selected answers from local storage
+function loadSelectedAnswers() {
+    for (let i = 1; i <= 5; i++) {
+        const savedAnswer = localStorage.getItem(`q${i}`);
+        if (savedAnswer) {
+            const options = quizForm[`q${i}`];
+            [...options].forEach(option => {
+                if (option.value === savedAnswer) {
+                    option.checked = true;
+                }
+            });
+        }
+    }
+}
+
+// Save selected answer to local storage when checked
+quizForm.addEventListener('change', (event) => {
+    const { name, value } = event.target;
+    if (event.target.checked) {
+        localStorage.setItem(name, value);
+    }
+});
+
 submitButton.addEventListener('click', () => {
     let score = 0;
     let isComplete = true;
@@ -41,6 +64,11 @@ submitButton.addEventListener('click', () => {
         // Scroll to the score container
         scoreContainer.scrollIntoView({ behavior: 'smooth', block: 'center' });
         
+        // Clear the saved answers
+        for (let i = 1; i <= 5; i++) {
+            localStorage.removeItem(`q${i}`);
+        }
+        
         // Reset the form
         quizForm.reset();
     }
@@ -51,6 +79,7 @@ submitButton.addEventListener('click', () => {
 document.getElementById('quiz-show').addEventListener('click', function() {
     const quizApp = document.getElementById('quiz-app');
     quizApp.style.display = 'flex';
+    loadSelectedAnswers(); // Load saved answers when showing the quiz
 });
 
 // Hide

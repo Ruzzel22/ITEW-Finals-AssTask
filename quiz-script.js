@@ -23,13 +23,13 @@ submitButton.addEventListener('click', () => {
         const selectedAnswer = [...selected].find((option) => option.checked);
 
         if (selectedAnswer) {
-        if (selectedAnswer.value === correctAnswers[`q${i}`]) {
-            score++;
-        }
+            if (selectedAnswer.value === correctAnswers[`q${i}`]) {
+                score++;
+            }
         } else {
-        isComplete = false;
-        alert(`Question ${i} is not answered.`);
-        break;
+            isComplete = false;
+            alert(`Question ${i} is not answered.`);
+            break;
         }
     }
 
@@ -37,6 +37,12 @@ submitButton.addEventListener('click', () => {
         // Show the score
         scoreDisplay.textContent = score;
         scoreContainer.style.display = 'block';
+        
+        // Scroll to the score container
+        scoreContainer.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        
+        // Reset the form
+        quizForm.reset();
     }
 });
 
@@ -51,4 +57,5 @@ document.getElementById('quiz-show').addEventListener('click', function() {
 document.getElementById('quiz-close').addEventListener('click', function() {
     const quizButton = document.getElementById('quiz-app');
     quizButton.style.display = 'none';
+    scoreContainer.style.display = 'none';
 });

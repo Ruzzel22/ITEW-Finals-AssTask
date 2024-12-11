@@ -1,3 +1,27 @@
+/* Buy Now Cart */
+// Cart Value Increment
+document.addEventListener("DOMContentLoaded", () => {
+    // Initialize cart count
+    let cartCount = 0;
+
+    // Cart count element
+    const cartIcon = document.querySelector(".cart-icon button");
+    let cartBadge = document.createElement("span");
+    cartBadge.classList.add("cart-badge");
+    cartBadge.innerText = cartCount;
+    cartIcon.appendChild(cartBadge);
+
+    // Click event
+    const buyButtons = document.querySelectorAll(".product-buy");
+    buyButtons.forEach(button => {
+        button.addEventListener("click", () => {
+            // Increment count
+            cartCount++;
+            cartBadge.innerText = cartCount;
+        });
+    });
+});
+
 /* Product Preview */
 // Display preview
 document.querySelectorAll('.product img').forEach(img => {
@@ -42,6 +66,7 @@ document.querySelectorAll('.product img').forEach(img => {
         document.body.style.backgroundColor = 'transparent';
     });
 });
+
 // Hide preview
 document.getElementById('product-preview').addEventListener('click', (e) => {
     if (e.target === e.currentTarget) {
